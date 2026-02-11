@@ -1,0 +1,500 @@
+{
+  "config": {
+    "configFile": "/Users/app/Sauce Demo/playwright.config.ts",
+    "rootDir": "/Users/app/Sauce Demo/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/app/Sauce Demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/app/Sauce Demo/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/app/Sauce Demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "Mobile Safari",
+        "name": "Mobile Safari",
+        "testDir": "/Users/app/Sauce Demo/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "checkout-flow.spec.ts",
+      "file": "checkout-flow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Checkout Flow",
+          "file": "checkout-flow.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-001: Complete checkout flow with programmatic login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6842,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T19:15:16.090Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/app/Sauce Demo/test-results/checkout-flow-Checkout-Flo-68184-low-with-programmatic-login-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd61b1856f0a92f3f43c-53b9e08b58603479de5a",
+              "file": "checkout-flow.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "TC-002: Verify cart badge updates correctly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6708,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T19:15:16.103Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/app/Sauce Demo/test-results/checkout-flow-Checkout-Flo-c9f0a-art-badge-updates-correctly-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bd61b1856f0a92f3f43c-8e684d7e2190392f4e2a",
+              "file": "checkout-flow.spec.ts",
+              "line": 77,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mobile-checkout.spec.ts",
+      "file": "mobile-checkout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Mobile Checkout Flow",
+          "file": "mobile-checkout.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-002: Complete checkout flow on mobile viewport",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7072,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T19:15:16.101Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/app/Sauce Demo/test-results/mobile-checkout-Mobile-Che-d6b99-out-flow-on-mobile-viewport-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7838c6abe721b19c2eeb-18947ad650de8814dddb",
+              "file": "mobile-checkout.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "Verify mobile UI elements are properly sized",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6671,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T19:15:16.094Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/app/Sauce Demo/test-results/mobile-checkout-Mobile-Che-4d0b2-elements-are-properly-sized-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7838c6abe721b19c2eeb-0b8760df78f392916364",
+              "file": "mobile-checkout.spec.ts",
+              "line": 97,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Performance Tests",
+          "file": "performance.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Inventory page should become interactive within 2.0 seconds",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4907,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Inventory page load time: 1227ms\n"
+                        },
+                        {
+                          "text": "Performance threshold: 2000ms\n"
+                        },
+                        {
+                          "text": "Performance margin: 773ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T19:15:23.675Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/app/Sauce Demo/test-results/performance-Performance-Te-26b5e-eractive-within-2-0-seconds-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b15d6361b2fc38288977-0116b5187d26a5008999",
+              "file": "performance.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "Measure and log detailed performance metrics",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4432,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Performance Metrics: {\n  \"domContentLoaded\": 0.19999998807907104,\n  \"loadComplete\": 237.5,\n  \"domInteractive\": 148.29999995231628,\n  \"domContentLoadedEvent\": 255.79999995231628,\n  \"loadEvent\": 333.0999999642372,\n  \"firstPaint\": 320,\n  \"firstContentfulPaint\": 320\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T19:15:23.698Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/app/Sauce Demo/test-results/performance-Performance-Te-5439b-etailed-performance-metrics-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b15d6361b2fc38288977-050012aa2c93003fc2b8",
+              "file": "performance.spec.ts",
+              "line": 46,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "visual-validation.spec.ts",
+      "file": "visual-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Visual Validation",
+          "file": "visual-validation.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-003: Verify Add to Cart button state change (text and color)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5050,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Button color after click: {\n  color: \u001b[32m'rgb(226, 35, 26)'\u001b[39m,\n  backgroundColor: \u001b[32m'rgb(255, 255, 255)'\u001b[39m,\n  className: \u001b[32m'btn btn_secondary btn_small btn_inventory '\u001b[39m\n}\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T19:15:23.911Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/app/Sauce Demo/test-results/visual-validation-Visual-V-afa72-tate-change-text-and-color--chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d9e31641b31f07630ff7-a4fc205ef0963b259243",
+              "file": "visual-validation.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "Verify button is clickable and functional",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4974,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-11T19:15:23.992Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/app/Sauce Demo/test-results/visual-validation-Visual-V-86004-is-clickable-and-functional-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d9e31641b31f07630ff7-06a4a40bde9aa5da00e0",
+              "file": "visual-validation.spec.ts",
+              "line": 71,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-11T19:15:14.900Z",
+    "duration": 14232.6,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
