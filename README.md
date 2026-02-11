@@ -63,7 +63,7 @@ This is a high-performance QA automation framework for SauceDemo e-commerce plat
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/mrhassanzaheer/St-Trinity-Property-Group-Test-Project
    cd "Sauce Demo"
    ```
 
